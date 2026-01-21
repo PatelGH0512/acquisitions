@@ -1,0 +1,2 @@
+{"level":"info","message":"Received GET request for /","service":"acquisitions-api","timestamp":"2026-01-21T04:51:50.110Z"}
+{"level":"info","message":"::1 - - [21/Jan/2026:04:51:50 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2026-01-21T04:51:50.123Z"}
