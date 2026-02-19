@@ -6,7 +6,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import { uptime } from 'process';
 import authRoutes from './routes/auth.routes.js';
-
+import securityMiddleware from './middleware/security.middleware.js';
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(cookieParser());
 
 
 app.use(morgan("combined", { stream: { write: (message) => logger.info(message.trim()) } }));
-
+app.use(securityMiddleware);
 app.get('/', (req, res) => {
   logger.info('Received GET request for /');
   res.status(200).send('Hello from the Acquisitions API!');
