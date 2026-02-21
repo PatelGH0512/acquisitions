@@ -11,7 +11,7 @@
 - **Validation** with **Zod**
 - **Testing** with **Jest** + **Supertest**
 
-This README is written to be recruiter-friendly: it explains the architecture, data flow, and how the system works end-to-end.
+This README file explains the architecture, data flow, and how the system works end-to-end.
 
 ---
 
@@ -384,7 +384,3 @@ Tests live in:
 - Password update flow exists in validation but is not yet wired to re-hash on update (current `updateUser` updates fields as provided).
 
 ---
-
-## 11) 2–3 Sentence Summary (for teammates)
-
-Acquisitions is a layered Express API that uses Drizzle ORM over Neon Postgres to provide user authentication and user management endpoints. Requests flow through security middleware (Helmet/Arcjet), optional JWT/RBAC middleware, then controllers that validate input with Zod and call services for database operations. The project is container-ready, testable with Jest/Supertest, and designed as a solid backend starter for production-style APIs.
