@@ -28,8 +28,7 @@ app.get('/', (req, res) => {
 app.get("/health", (req, res) => {
     logger.info("Received GET request for /health");
     res.status(200).json({
-        status: "success",
-        message: "OK",
+        status: "OK",
         timestamp: new Date().toISOString(),
         uptime: process.uptime(),
     });
