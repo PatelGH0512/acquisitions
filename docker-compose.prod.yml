@@ -12,4 +12,4 @@ services:
       DATABASE_URL: ${DATABASE_URL}
       ARCJET_KEY: ${ARCJET_KEY}
     ports:
-      - "3000:3000"
+      - '3000:3000'

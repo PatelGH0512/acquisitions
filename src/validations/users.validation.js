@@ -15,7 +15,13 @@ export const updateUserSchema = z
       .max(255)
       .trim()
       .optional(),
-    email: z.string().email('Invalid email address').max(255).trim().toLowerCase().optional(),
+    email: z
+      .string()
+      .email('Invalid email address')
+      .max(255)
+      .trim()
+      .toLowerCase()
+      .optional(),
     password: z.string().min(6).max(255).optional(),
     role: z.enum(['user', 'admin']).optional(),
   })
